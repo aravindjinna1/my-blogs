@@ -7,7 +7,7 @@ export default function AboutPage() {
       {/* <Navbar /> */}
       <div className="max-w-3xl mx-auto mt-6 p-6 border border-black rounded bg-white text-black">
         <h1 className="text-3xl font-bold mb-4">About</h1>
-        <p>This is a Next.js blog app with authentication and rich text editor.</p>
+        <p>This is about page .</p>
       </div>
     </div>
   );

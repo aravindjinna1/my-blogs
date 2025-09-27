@@ -20,7 +20,7 @@ export default function CreatePostForm() {
   const [isPosting, setIsPosting] = useState(false);
   const [imageFile, setImageFile] = useState(null);
   const [imagePreview, setImagePreview] = useState(null);
-  const [isClient, setIsClient] = useState(false); // ✅ detect client
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
@@ -36,7 +36,7 @@ export default function CreatePostForm() {
       Heading.configure({ levels: [1, 2, 3] }),
     ],
     content: "<p><em>Start writing your content here…</em></p>",
-    immediatelyRender: false, // ✅ prevent SSR hydration mismatch
+    immediatelyRender: false, 
   });
 
   async function handleImageUpload(file) {
