@@ -26,3 +26,65 @@ export default function AdminPanel() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// "use client";
+// import { useEffect, useState } from "react";
+
+// export default function PostList({ currentUser }) {
+//   const [posts, setPosts] = useState([]);
+
+//   useEffect(() => {
+//     fetch("/api/posts")
+//       .then(r => r.json())
+//       .then(d => setPosts(d.posts || []));
+//   }, []);
+
+//   async function handleDelete(postId) {
+//     if (!confirm("Are you sure to delete this post?")) return;
+
+//     const res = await fetch(`/api/posts/${postId}`, { method: "DELETE" });
+//     if (!res.ok) return alert("Failed to delete post");
+
+//     setPosts(posts.filter(p => p._id !== postId));
+//   }
+
+//   return (
+//     <div className="max-w-4xl mx-auto mt-6 bg-white p-6 rounded shadow-md">
+//       <h2 className="text-2xl font-bold mb-4">Posts</h2>
+
+//       {posts.map(post => (
+//         <div key={post._id} className="flex justify-between items-center border-b py-2">
+//           <span>{post.title}</span>
+
+//           {/* Only show Delete if currentUser is the author */}
+//           {currentUser?.id === post.authorId && (
+//             <button
+//               onClick={() => handleDelete(post._id)}
+//               className="text-red-600 hover:underline"
+//             >
+//               Delete
+//             </button>
+//           )}
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
